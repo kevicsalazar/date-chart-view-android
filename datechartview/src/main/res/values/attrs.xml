@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DateChartView">
+        <attr name="dayTextSize" format="dimension" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="footerHeight" format="dimension" />
+        <attr name="dataPointRadius" format="dimension" />
+        <attr name="labelLineThickness" format="dimension" />
+        <attr name="dataLineThickness" format="dimension" />
+        <attr name="chartPaddingTop" format="dimension" />
+        <attr name="chartPaddingBottom" format="dimension" />
+        <attr name="labelTextWidth" format="dimension" />
+        <attr name="maxValue" format="float" />
+        <attr name="minValue" format="float" />
+        <attr name="numOfVisibleDays" format="integer" />
+        <attr name="numOfHorizontalLabels" format="integer" />
+        <attr name="bodyBackgroundColor" format="color" />
+        <attr name="footerBackgroundColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="labelLineColor" format="color" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="middleLineColor" format="color" />
+        <attr name="middleLineVisible" format="boolean" />
+        <attr name="middleLineThickness" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.kevicsalazar.datechartview.DateChartView
+            android:id="@+id/dateChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:bodyBackgroundColor="@color/white"
+            app:dataLineThickness="4dp"
+            app:dataPointRadius="5dp"
+            app:dayTextColor="@color/grey_800"
+            app:dayTextSize="16sp"
+            app:footerBackgroundColor="@color/grey_300"
+            app:footerHeight="56dp"
+            app:labelLineColor="@color/grey_300"
+            app:labelLineThickness="1dp"
+            app:labelTextColor="@color/grey_400"
+            app:labelTextSize="14sp"
+            app:labelTextWidth="36dp"
+            app:maxValue="100"
+            app:middleLineColor="@color/cyan_400"
+            app:middleLineThickness="1dp"
+            app:middleLineVisible="true"
+            app:minValue="50"
+            app:numOfVisibleDays="7"
+            app:selectedDayBackgroundColor="@color/grey_800" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvDaySelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                tools:text="sábado 11 de noviembre" />
+
+            <TextView
+                android:id="@+id/tvValueSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="24sp"
+                tools:text="96%" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
