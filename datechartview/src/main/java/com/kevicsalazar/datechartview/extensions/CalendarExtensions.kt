@@ -4,10 +4,10 @@ import java.util.*
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 
-internal fun today() = Calendar.getInstance()
+internal fun today() = Calendar.getInstance().truncate()
 
 internal val Calendar.year get() = get(Calendar.YEAR)
 
@@ -34,3 +34,10 @@ internal fun Calendar.isSameDayAsDate(otherCalendar: Calendar): Boolean {
 }
 
 internal fun Calendar.isLaterThanDate(date: Calendar): Boolean = compareTo(date) == 1
+
+internal fun Calendar.truncate() = apply {
+    set(Calendar.HOUR_OF_DAY, 0)
+    set(Calendar.MINUTE, 0)
+    set(Calendar.SECOND, 0)
+    set(Calendar.MILLISECOND, 0)
+}

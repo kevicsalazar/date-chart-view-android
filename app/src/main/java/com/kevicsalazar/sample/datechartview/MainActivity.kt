@@ -25,11 +25,12 @@ class MainActivity : AppCompatActivity() {
         dateChart.onMonthChange = { newYear, newMonth ->
 
             val dataPoints = listOf(
-                    DataPoint(24, 83f),
-                    DataPoint(25, 82f),
-                    DataPoint(26, 84f),
-                    DataPoint(27, 81f),
-                    DataPoint(28, 87f)
+                    DataPoint(1, 83f),
+                    DataPoint(2, 82f),
+                    DataPoint(3, 84f),
+                    DataPoint(28, 81f),
+                    DataPoint(29, 87f),
+                    DataPoint(30, 87f)
             )
 
             val dataLine = DataLine(newYear, newMonth, dataPoints, colorRes(R.color.amber_500))

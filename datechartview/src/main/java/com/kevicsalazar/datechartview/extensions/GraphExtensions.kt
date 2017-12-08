@@ -6,7 +6,7 @@ import android.graphics.Path
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 
 internal fun Paint.height() = (ascent() + descent()) / 2

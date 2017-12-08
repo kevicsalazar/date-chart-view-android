@@ -7,6 +7,7 @@ import android.support.v4.view.GestureDetectorCompat
 import android.support.v4.view.ViewCompat
 import android.support.v4.view.animation.FastOutLinearInInterpolator
 import android.util.AttributeSet
+import android.util.Log
 import android.util.TypedValue
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -20,7 +21,7 @@ import java.util.*
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 class DateChartView(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
@@ -431,8 +432,12 @@ class DateChartView(context: Context, attrs: AttributeSet) : View(context, attrs
     }
 
     fun addMonthDataLines(dataLines: List<DataLine>) {
+        with(this.dataLines) {
+            //dataLines.
+        }
         this.dataLines.addAll(dataLines)
         invalidate()
+        Log.e(":)", this.dataLines.size.toString())
     }
 
     @SuppressLint("ClickableViewAccessibility")

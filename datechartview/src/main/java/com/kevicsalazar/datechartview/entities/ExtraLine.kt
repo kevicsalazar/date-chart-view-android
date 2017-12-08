@@ -2,6 +2,6 @@ package com.kevicsalazar.datechartview.entities
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 data class ExtraLine(val label: String, val value: Float, val color: Int)

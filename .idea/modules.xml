@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DateChartView.iml" filepath="$PROJECT_DIR$/DateChartView.iml" />
+      <module fileurl="file://C:\Projects\DateChartView\DateChartView.iml" filepath="C:\Projects\DateChartView\DateChartView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/datechartview/datechartview.iml" filepath="$PROJECT_DIR$/datechartview/datechartview.iml" />
+      <module fileurl="file://C:\Projects\DateChartView\datechartview\datechartview.iml" filepath="C:\Projects\DateChartView\datechartview\datechartview.iml" />
     </modules>
   </component>
 </project>

@@ -5,6 +5,6 @@ import android.support.annotation.ColorInt
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 data class DataLine(val year: Int, val month: Int, val points: List<DataPoint>, @ColorInt val color: Int = Color.CYAN)

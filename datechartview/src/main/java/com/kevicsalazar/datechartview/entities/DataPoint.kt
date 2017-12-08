@@ -2,6 +2,6 @@ package com.kevicsalazar.datechartview.entities
 
 /**
  * @author Kevin Salazar
- * @link kevicsalazar.com
+ * @link https://github.com/kevicsalazar
  */
 data class DataPoint(val dayOfMonth: Int, val value: Float)
