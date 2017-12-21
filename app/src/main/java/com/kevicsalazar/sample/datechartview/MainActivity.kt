@@ -20,17 +20,16 @@ class MainActivity : AppCompatActivity() {
 
         dateChart.onDaySelected = { date ->
             tvDaySelected.text = date.string("EEEE, d ' de ' MMMM")
+            tvValueSelected.text = "81 %"
         }
 
         dateChart.onMonthChange = { newYear, newMonth ->
 
             val dataPoints = listOf(
-                    DataPoint(1, 83f),
-                    DataPoint(2, 82f),
-                    DataPoint(3, 84f),
-                    DataPoint(28, 81f),
-                    DataPoint(29, 87f),
-                    DataPoint(30, 87f)
+                    DataPoint(16, 80f),
+                    DataPoint(17, 82f),
+                    DataPoint(18, 84f),
+                    DataPoint(19, 81f)
             )
 
             val dataLine = DataLine(newYear, newMonth, dataPoints, colorRes(R.color.amber_500))

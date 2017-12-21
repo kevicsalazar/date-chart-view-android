@@ -432,7 +432,7 @@ class DateChartView(context: Context, attrs: AttributeSet) : View(context, attrs
     }
 
     fun addMonthDataLines(dataLines: List<DataLine>) {
-        with(this.dataLines) {
+        with(this.dataLines) { 
             //dataLines.
         }
         this.dataLines.addAll(dataLines)
